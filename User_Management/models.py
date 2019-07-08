@@ -3,7 +3,7 @@ from django.contrib.auth.models import (
     BaseUserManager, AbstractBaseUser, PermissionsMixin
 )
 
-class AuxUserManager(BaseUserManager):
+class UserManager(BaseUserManager):
 
     def create_user(self, username, password=None, location=None):
         """
@@ -14,10 +14,10 @@ class AuxUserManager(BaseUserManager):
             raise ValueError('User must have an username')
         if location == 'super':
             username = username
-        else:
-            status, username = is_phone_valid(username)
-            if not status:
-                raise ValueError("Username value error!")
+        # else:
+        #     status, username = is_phone_valid(username)
+        #     if not status:
+        #         raise ValueError("Username value error!")
 
         user = self.model(
             # username=self.normalize_email(username)
@@ -55,7 +55,7 @@ class AuxUserManager(BaseUserManager):
         aux_obj.is_pin_reset = True
         aux_obj.save()
 
-class AuxUser(AbstractBaseUser, PermissionsMixin):
+class User(AbstractBaseUser, PermissionsMixin):
     username = models.CharField(
         verbose_name='Username',
         unique=True,
@@ -83,7 +83,7 @@ class AuxUser(AbstractBaseUser, PermissionsMixin):
     is_admin = models.BooleanField(default=False)
     is_pin_reset = models.BooleanField(default=False)
 
-    objects = AuxUserManager()
+    objects = UserManager()
 
     USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = []
@@ -113,19 +113,6 @@ class AuxUser(AbstractBaseUser, PermissionsMixin):
         "Is the user a member of staff?"
         # Simplest possible answer: All admins are staff
         return self.is_admin
-
-    # @classmethod
-    # def make_user_pending_to_not_pending(self):
-    #     """
-    #     this function takes an username as argument when an agent is verified
-    #     then this funtions active the user that is is_pending True to False
-    #     :param username: get connent id
-    #     :return: the modified user
-    #     """
-    #     self.is_pending=False
-    #     self.save(self)
-
-
 
 
 
