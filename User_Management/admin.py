@@ -5,7 +5,7 @@ from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth.forms import ReadOnlyPasswordHashField
 from django.utils.translation import gettext, gettext_lazy as _
 
-from User_Management.models import AuxUser
+from User_Management.models import User
 
 
 class UserCreationForm(forms.ModelForm):
@@ -15,7 +15,7 @@ class UserCreationForm(forms.ModelForm):
     password2 = forms.CharField(label='Password confirmation', widget=forms.PasswordInput)
 
     class Meta:
-        model = AuxUser
+        model = User
         fields = ('username',)
 
     def clean_password2(self):
@@ -46,7 +46,7 @@ class UserChangeForm(forms.ModelForm):
                                                    "using <a href=\"../password/\">this form</a>.")
 
     class Meta:
-        model = AuxUser
+        model = User
         fields = "__all__"
 
     def clean_password(self):
@@ -88,7 +88,7 @@ class UserAdmin(BaseUserAdmin):
 
 
 # Now register the new UserAdmin...
-admin.site.register(AuxUser, UserAdmin)
+admin.site.register(User, UserAdmin)
 
 # unregister the Group model from admin.
 # admin.site.unregister(Group)
