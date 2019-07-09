@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="5ad437d4-dafa-4742-aea0-460f7ac5aa24" name="Default Changelist" comment="" />
+=======
     <list default="true" id="5ad437d4-dafa-4742-aea0-460f7ac5aa24" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+>>>>>>> bfc390f934fe1a6f4801e559717e28e28c09f93f
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +43,13 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="43" column="24" lean-forward="true" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+=======
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/User_Management/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -47,10 +58,28 @@
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
+>>>>>>> bfc390f934fe1a6f4801e559717e28e28c09f93f
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applibs/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+=======
+>>>>>>> bfc390f934fe1a6f4801e559717e28e28c09f93f
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -173,23 +202,47 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562587106891</updated>
+<<<<<<< HEAD
+      <workItem from="1562587115993" duration="1134000" />
+=======
       <workItem from="1562587115993" duration="938000" />
       <workItem from="1562601668361" duration="2008000" />
       <workItem from="1562608844033" duration="598000" />
+<<<<<<< HEAD
       <workItem from="1562613857030" duration="135000" />
       <workItem from="1562685623335" duration="225000" />
+=======
+>>>>>>> bfc390f934fe1a6f4801e559717e28e28c09f93f
+>>>>>>> dc185b8856bff20c1cbdeac592790e5b7e563e28
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="3679000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="1134000" />
+=======
+    <option name="totallyTimeSpent" value="3544000" />
+>>>>>>> bfc390f934fe1a6f4801e559717e28e28c09f93f
+>>>>>>> dc185b8856bff20c1cbdeac592790e5b7e563e28
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26656026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" weight="0.6058632" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+=======
       <window_info id="Favorites" order="2" side_tool="true" />
+>>>>>>> bfc390f934fe1a6f4801e559717e28e28c09f93f
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.6465798" />
@@ -277,11 +330,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/User_Management/views.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="119">
+          <caret line="43" column="24" lean-forward="true" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+=======
         <state relative-caret-position="289">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
+>>>>>>> bfc390f934fe1a6f4801e559717e28e28c09f93f
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
