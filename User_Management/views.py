@@ -10,6 +10,8 @@ from django.contrib.contenttypes.models import ContentType
 
 from User_Management.serializers import Userserializer
 from .models import User
+from .mixins import GroupRequiredMixin
+
 
 class UserCreation(APIView):
     def post(self,request):
@@ -28,7 +30,7 @@ class UserCreation(APIView):
         return Response(serializer.data,status = status.HTTP_200_OK)
 
 
-class AssignUserToGroup(APIView):
+class AssignUserToGroup(GroupRequiredMixin,APIView):
     # content_type = ContentType.objects.get(app_label='myapp', model='BlogPost')
     # permission = Permission.objects.create(codename='can_publish',
     #                                        name='Can Publish Posts',
@@ -36,11 +38,18 @@ class AssignUserToGroup(APIView):
 
 
     def post(self,request):
+        group_required = [u'visitor',]
+
+        # if request.user.groups.name=="visitor":
+        #     print("permmission granted")
+        # else:
+        #     print("permission denied")
+        print("group_name",request.user.groups.name)
         print(request.data)
         user = User.objects.get(username=request.data['username'])
         group = Group.objects.get(name=request.data['group'])
         a =user.groups.add(group)
-        print(a)
+        #print(a)
         permissions = user.get_group_permissions()
         for p in permissions:
             print(p)
