@@ -133,24 +133,29 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
 REST_FRAMEWORK = {
-    #'EXCEPTION_HANDLER': 'applibs.confs.custom_exception_handler',
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
-        'User_Management.permissions.UserPermission', #custom permission
-
-    ),
-    # 'DEFAULT_RENDERER_CLASSES': (
-    #     'rest_framework.renderers.JSONRenderer',
-    # ),
-    # 'DEFAULT_AUTHENTICATION_CLASSES': (
-    #     'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
-    #     'rest_framework.authentication.SessionAuthentication',
-    #     'rest_framework.authentication.BasicAuthentication',
-    # ),
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ],
 }
 
-##########################################################
-#celery
+# REST_FRAMEWORK = {
+#     #'EXCEPTION_HANDLER': 'applibs.confs.custom_exception_handler',
+#     'DEFAULT_PERMISSION_CLASSES': (
+#         'rest_framework.permissions.IsAuthenticated',
+#         'User_Management.permissions.UserPermission', #custom permission
+#
+#     ),
+#     # 'DEFAULT_RENDERER_CLASSES': (
+#     #     'rest_framework.renderers.JSONRenderer',
+#     # ),
+#     # 'DEFAULT_AUTHENTICATION_CLASSES': (
+#     #     'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+#     #     'rest_framework.authentication.SessionAuthentication',
+#     #     'rest_framework.authentication.BasicAuthentication',
+#     # ),
+# }
+#
+# ##########################################################
+# #celery
 
