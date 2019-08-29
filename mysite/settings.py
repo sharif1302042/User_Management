@@ -46,6 +46,7 @@ THIRD_PARTY_APPS = [
 ]
 LOCAL_APPS = [
     'User_Management',
+    'token_auth',
 ]
 
 INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + LOCAL_APPS
